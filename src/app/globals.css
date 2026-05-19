@@ -3480,17 +3480,11 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 0.5rem;
   margin-top: 0.35rem;
   padding-top: 0.55rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.menu-showcase .menu-showcase-card-price {
-  font-size: clamp(0.78rem, 1.15vw, 0.9rem);
-  font-weight: 600;
-  color: var(--accent);
 }
 
 .menu-showcase .menu-showcase-card-cta {

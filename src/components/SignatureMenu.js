@@ -3,31 +3,31 @@ import Link from "next/link";
 const DISHES = [
   {
     num: "01",
-    title: "Oysters On The Half Shell",
-    description: "Daily selection, tarragon mignonette.",
+    title: "Seasonal Strawberry Tartlet",
+    description: "with herbs & rooftop blossoms.",
     image:
-      "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=1800&q=88",
+      "/one.jpg",
   },
   {
     num: "02",
-    title: "Santa Barbara Spot Prawns",
-    description: "Rosemary, olive oil, lemon.",
+    title: "Red Abalone with Winter Squash",
+    description: "Red Abalone, Egg Sabayon & Abalone Dashi.",
     image:
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=88",
+      "/two.jpg",
   },
   {
     num: "03",
-    title: "King Salmon",
-    description: "Porcini, ramp butter, smoked roe.",
+    title: "Wild-Caught Japanese Tai Snapper",
+    description: "Tai snapper with Sungold tomato and basil.",
     image:
-      "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1800&q=88",
+      "three.jpg",
   },
   {
     num: "04",
-    title: "A5 Wagyu",
-    description: "Kohlrabi, stuffed morel, black garlic.",
+    title: "King Salmon",
+    description: "Chanterelles, pickled grapes, and rooftop herbs.",
     image:
-      "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1800&q=88",
+      "four.jpg",
   },
 ];
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -17,7 +17,6 @@ const MENU_BY_TAB = {
       num: "01",
       title: "Oysters On The Half Shell",
       description: "Daily selection, tarragon mignonette.",
-      price: "$36",
       image:
         "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -27,7 +26,6 @@ const MENU_BY_TAB = {
       num: "02",
       title: "Santa Barbara Spot Prawns",
       description: "Rosemary, olive oil, lemon.",
-      price: "Market Price",
       image:
         "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -37,7 +35,6 @@ const MENU_BY_TAB = {
       num: "03",
       title: "King Salmon",
       description: "Porcini, ramp butter, smoked roe.",
-      price: "$48",
       image:
         "https://images.unsplash.com/photo-1467003909585-41f8a0ba7891?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -47,7 +44,6 @@ const MENU_BY_TAB = {
       num: "04",
       title: "A5 Wagyu",
       description: "Kohlrabi, stuffed morel, black garlic.",
-      price: "$95",
       image:
         "https://images.unsplash.com/photo-1565680018434-b0d5fb022f7d?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -59,7 +55,6 @@ const MENU_BY_TAB = {
       num: "01",
       title: "Kaluga Caviar",
       description: "Country ham, giant clam, soy milk.",
-      price: "$75",
       image:
         "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -68,8 +63,7 @@ const MENU_BY_TAB = {
     {
       num: "02",
       title: "Sashimi",
-      description: "Hibiscus, crème fraîche, cucumber.",
-      price: "$42",
+      description: "Hibiscus, crÃ¨me fraÃ®che, cucumber.",
       image:
         "https://images.unsplash.com/photo-1432139575988-1e991efc5ce7?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -79,7 +73,6 @@ const MENU_BY_TAB = {
       num: "03",
       title: "Abalone",
       description: "Green asparagus, snap peas, white truffle.",
-      price: "$58",
       image:
         "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -89,7 +82,6 @@ const MENU_BY_TAB = {
       num: "04",
       title: "Liberty Farms Duck",
       description: "Cherry glaze, smoked turnip, herbs.",
-      price: "$64",
       image:
         "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -100,8 +92,7 @@ const MENU_BY_TAB = {
     {
       num: "01",
       title: "Citrus Cured Salmon",
-      description: "Avocado, cucumber, dill crème fraîche.",
-      price: "$24",
+      description: "Avocado, cucumber, dill crÃ¨me fraÃ®che.",
       image:
         "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -111,7 +102,6 @@ const MENU_BY_TAB = {
       num: "02",
       title: "Garden Greens",
       description: "Heirloom lettuce, goat cheese, champagne vinaigrette.",
-      price: "$18",
       image:
         "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -121,7 +111,6 @@ const MENU_BY_TAB = {
       num: "03",
       title: "Lobster Roll",
       description: "Butter-poached lobster, brioche, herb aioli.",
-      price: "$32",
       image:
         "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -131,7 +120,6 @@ const MENU_BY_TAB = {
       num: "04",
       title: "Seasonal Soup",
       description: "Chef's daily preparation with fresh herbs.",
-      price: "$16",
       image:
         "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -141,9 +129,8 @@ const MENU_BY_TAB = {
   dessert: [
     {
       num: "01",
-      title: "Valrhona Soufflé",
-      description: "Dark chocolate, crème anglaise, raspberry.",
-      price: "$18",
+      title: "Valrhona SoufflÃ©",
+      description: "Dark chocolate, crÃ¨me anglaise, raspberry.",
       image:
         "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -153,7 +140,6 @@ const MENU_BY_TAB = {
       num: "02",
       title: "Lemon Tart",
       description: "Meyer lemon curd, Italian meringue, candied zest.",
-      price: "$14",
       image:
         "https://images.unsplash.com/photo-1519915028121-7d346bb8f304?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -163,7 +149,6 @@ const MENU_BY_TAB = {
       num: "03",
       title: "Seasonal Sorbet",
       description: "Rotating fruit selection, mint, prosecco granita.",
-      price: "$12",
       image:
         "https://images.unsplash.com/photo-1488900128323-a215a8a6922f?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -171,9 +156,8 @@ const MENU_BY_TAB = {
     },
     {
       num: "04",
-      title: "Crème Brûlée",
+      title: "CrÃ¨me BrÃ»lÃ©e",
       description: "Madagascar vanilla, caramelized sugar, berry compote.",
-      price: "$15",
       image:
         "https://images.unsplash.com/photo-1470124182917-cc6e71b22aec?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -183,9 +167,8 @@ const MENU_BY_TAB = {
   wine: [
     {
       num: "01",
-      title: "Dom Pérignon",
-      description: "Champagne, France — citrus, brioche, fine mousse.",
-      price: "$320",
+      title: "Dom PÃ©rignon",
+      description: "Champagne, France â€” citrus, brioche, fine mousse.",
       image:
         "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -194,8 +177,7 @@ const MENU_BY_TAB = {
     {
       num: "02",
       title: "Burgundy Pinot Noir",
-      description: "Côte de Nuits — red cherry, earth, silky tannins.",
-      price: "$85",
+      description: "CÃ´te de Nuits â€” red cherry, earth, silky tannins.",
       image:
         "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -204,8 +186,7 @@ const MENU_BY_TAB = {
     {
       num: "03",
       title: "Napa Cabernet",
-      description: "Oakville — cassis, cedar, structured finish.",
-      price: "$72",
+      description: "Oakville â€” cassis, cedar, structured finish.",
       image:
         "https://images.unsplash.com/photo-1506377247377-894ca44695c3?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -214,8 +195,7 @@ const MENU_BY_TAB = {
     {
       num: "04",
       title: "Sancerre Blanc",
-      description: "Loire Valley — gooseberry, mineral, crisp acidity.",
-      price: "$48",
+      description: "Loire Valley â€” gooseberry, mineral, crisp acidity.",
       image:
         "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
       fallback:
@@ -354,11 +334,10 @@ export default function MenuShowcase() {
                     <h3 className="menu-showcase-card-title">{dish.title}</h3>
                     <p className="menu-showcase-card-desc">{dish.description}</p>
                     <div className="menu-showcase-card-footer">
-                      <span className="menu-showcase-card-price">{dish.price}</span>
                       <Link href="/menus" className="menu-showcase-card-cta">
                         VIEW DISH
                         <span className="menu-showcase-card-cta-arrow" aria-hidden="true">
-                          →
+                          â†’
                         </span>
                       </Link>
                     </div>
@@ -373,7 +352,7 @@ export default function MenuShowcase() {
           <Link href="/menus" className="menu-showcase-cta">
             EXPLORE THE FULL MENU
             <span className="menu-showcase-cta-arrow" aria-hidden="true">
-              →
+              â†’
             </span>
           </Link>
         </footer>
