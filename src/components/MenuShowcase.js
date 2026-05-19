@@ -27,103 +27,81 @@ const MENU_BY_TAB = {
       title: "Hokkaido Scallop",
       description: "Scallop-infused XO, scallop broth, chayote greens, oceanic brine sweetness.",
       image:
-        "/six.png",
-      fallback:
-        "https://images.unsplash.com/photo-1519708221-053da5824f44?auto=format&fit=crop&w=1200&q=85",
+        "/six.jpg",
     },
     {
       num: "03",
-      title: "King Salmon",
-      description: "Porcini, ramp butter, smoked roe.",
+      title: "House Smoked Wild Alaskan King Salmon",
+      description: "Horseradish, ikura, rooftop dill, delicately dry-aged preparation.",
       image:
-        "https://images.unsplash.com/photo-1467003909585-41f8a0ba7891?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85",
+        "/salmon.jpg",
     },
     {
       num: "04",
-      title: "A5 Wagyu",
-      description: "Kohlrabi, stuffed morel, black garlic.",
+      title: "The Uni Egg",
+      description: "Sea urchin, Golden Kaluga caviar, Champagne beurre blanc, brioche croutons.",
       image:
-        "https://images.unsplash.com/photo-1565680018434-b0d5fb022f7d?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1559847844-53156997659?auto=format&fit=crop&w=1200&q=85",
+        "8.jpg",
     },
   ],
   dinner: [
     {
       num: "01",
-      title: "Kaluga Caviar",
-      description: "Country ham, giant clam, soy milk.",
+      title: "Matsutake Sashimi",
+      description: "Late autumn sashimi, matsutake mushroom, yuzu, delicate floral garnish.",
       image:
-        "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=85",
+        "9.jpg",
     },
     {
       num: "02",
-      title: "Sashimi",
-      description: "Hibiscus, crÃ¨me fraÃ®che, cucumber.",
+      title: "Wild Japanese Tai Sashimi",
+      description: "Celtuce, passion fruit, citrus broth, delicate floral garnish.",
       image:
-        "https://images.unsplash.com/photo-1432139575988-1e991efc5ce7?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+        "/10.jpg",
     },
     {
       num: "03",
-      title: "Abalone",
-      description: "Green asparagus, snap peas, white truffle.",
+      title: "California Box Crab",
+      description: "Prawn, summer squash blossom, tomato broth, delicate seasonal seafood composition.",
       image:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85",
+        "/11.jpg",
     },
     {
       num: "04",
-      title: "Liberty Farms Duck",
-      description: "Cherry glaze, smoked turnip, herbs.",
+      title: "Smoked Swordfish Belly",
+      description: "Gloucester swordfish, flambo shelling beans, preserved black truffle, rich winter broth.",
       image:
-        "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85",
+        "/12.jpg",
     },
   ],
   lunch: [
     {
       num: "01",
-      title: "Citrus Cured Salmon",
-      description: "Avocado, cucumber, dill crÃ¨me fraÃ®che.",
+      title: "Kombu Jime Wild Japanese Tai Sashimi",
+      description: "Celtuce, jicama, passion fruit, pickled ginger, rooftop herbs.",
       image:
-        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1467003909585-41f8a0ba7891?auto=format&fit=crop&w=1200&q=85",
+        "/13.jpg",
     },
     {
       num: "02",
-      title: "Garden Greens",
-      description: "Heirloom lettuce, goat cheese, champagne vinaigrette.",
+      title: "Salt Spring Island Mussel",
+      description: "Savory mussel broth, gratiné finish, delicate chawanmushi custard.",
       image:
-        "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=85",
+        "/14.jpg",
     },
     {
-      num: "03",
-      title: "Lobster Roll",
-      description: "Butter-poached lobster, brioche, herb aioli.",
+      num: "02",
+      title: "Red Abalone with Winter Squash",
+      description: "Red Abalone, Egg Sabayon & Abalone Dashi.",
       image:
-        "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=1200&q=85",
+        "/two.jpg",
     },
     {
       num: "04",
-      title: "Seasonal Soup",
-      description: "Chef's daily preparation with fresh herbs.",
+      title: "King Salmon",
+      description: "Chanterelles, pickled grapes, and rooftop herbs.",
       image:
-        "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1200&q=85",
+        "four.jpg",
     },
   ],
   dessert: [
@@ -285,10 +263,10 @@ export default function MenuShowcase() {
           <h2 id="menu-showcase-heading" className="menu-showcase-title">
             A Celebration of Seasonal Excellence
           </h2>
-          <p className="menu-showcase-lede">
+          {/* <p className="menu-showcase-lede">
             Explore our seasonal menus, inspired by the finest ingredients and culinary
             artistry.
-          </p>
+          </p> */}
         </header>
 
         <div className="menu-showcase-tabs-wrap" role="tablist" aria-label="Menu categories">
