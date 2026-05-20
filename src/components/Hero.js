@@ -23,14 +23,12 @@ const TASTING_COURSES = [
   },
 ];
 
-/** Slide 1: existing hero art (local). */
 const HERO_SLIDE_1_SRC = "/heroimg1.png";
 
 /** Slide 2: remote — luxury restaurant interior (Unsplash). */
 const HERO_SLIDE_2_SRC =
   "/bannernew.png";
 
-/** Slide 3: remote — fine-dining kitchen / chef prep (Mixkit CDN). */
 const HERO_SLIDE_3_VIDEO_SRC =
   "/banner16.mp4";
 
@@ -140,6 +138,7 @@ function MenuOrnament() {
 
 function HeroBannerSlideshow() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasCompletedLoop, setHasCompletedLoop] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(false);
   const isInitialRef = useRef(true);
   const videoRef = useRef(null);
@@ -162,6 +161,8 @@ function HeroBannerSlideshow() {
 
   useEffect(() => {
     if (reduceMotion) return undefined;
+    if (hasCompletedLoop) return undefined;
+    if (activeIndex === 2) return undefined;
 
     let cancelled = false;
     const delay =
@@ -174,14 +175,19 @@ function HeroBannerSlideshow() {
     }
 
     const id = window.setTimeout(() => {
-      if (!cancelled) setActiveIndex((n) => (n + 1) % 3);
+      if (!cancelled) setActiveIndex((n) => n + 1);
     }, delay);
 
     return () => {
       cancelled = true;
       window.clearTimeout(id);
     };
-  }, [activeIndex, reduceMotion]);
+  }, [activeIndex, reduceMotion, hasCompletedLoop]);
+
+  const handleVideoEnded = () => {
+    setHasCompletedLoop(true);
+    setActiveIndex(0);
+  };
 
   useEffect(() => {
     if (reduceMotion) return undefined;
@@ -251,6 +257,7 @@ function HeroBannerSlideshow() {
               playsInline
               preload="metadata"
               loop={false}
+              onEnded={handleVideoEnded}
             />
           )}
         </div>
