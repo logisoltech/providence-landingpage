@@ -8,7 +8,7 @@ const TABS = [
   { id: "dinner", label: "DINNER MENU", Icon: IconCloche },
   { id: "lunch", label: "LUNCH MENU", Icon: IconSun },
   { id: "dessert", label: "DESSERT MENU", Icon: IconCake },
-  { id: "wine", label: "WINE LIST", Icon: IconWine },
+  { id: "wine", label: "BEVERAGES", Icon: IconWine },
 ];
 
 const MENU_BY_TAB = {
