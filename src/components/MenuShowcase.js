@@ -120,84 +120,68 @@ const MENU_BY_TAB = {
     {
       id: "dessert-01",
       num: "01",
-      title: "Valrhona SoufflÃ©",
-      description: "Dark chocolate, crÃ¨me anglaise, raspberry.",
+      title: "Pecan Hojicha Chocolate Sphere",
+      description: "Japanese black sugar, roasted pecan, hojicha, handcrafted dark chocolate confection.",
       image:
-        "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=85",
+        "/d1.jpg",
     },
     {
       id: "dessert-02",
       num: "02",
-      title: "Lemon Tart",
-      description: "Meyer lemon curd, Italian meringue, candied zest.",
+      title: "Hawaiian Chocolate Peanut Miso",
+      description: "Dessert featuring kinako ice cream, chocolate, peanut miso, and caramel-style sauce by Pastry Chef Mac Daniel Dimla.",
       image:
-        "https://images.unsplash.com/photo-1519915028121-7d346bb8f304?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=85",
+        "/d2.jpg",
     },
     {
       id: "dessert-03",
       num: "03",
-      title: "Seasonal Sorbet",
-      description: "Rotating fruit selection, mint, prosecco granita.",
+      title: "California Citrus Sorbet",
+      description: "Dessert featuring seasonal California citrus, citrus sorbet, and delicate fruit elements crafted in Providence’s signature Michelin-starred style.",
       image:
-        "https://images.unsplash.com/photo-1488900128323-a215a8a6922f?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85",
+        "/d3.jpg",
     },
     {
       id: "dessert-04",
       num: "04",
-      title: "CrÃ¨me BrÃ»lÃ©e",
-      description: "Madagascar vanilla, caramelized sugar, berry compote.",
+      title: "Thomcorde Grape Sorbet",
+      description: "Pre-dessert featuring Thomcorde grape sorbet, cognac granita, warm spice notes, fall fruits, and mint, crafted in Providence’s elegant Michelin-starred pastry style.",
       image:
-        "https://images.unsplash.com/photo-1470124182917-cc6e71b22aec?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=85",
+        "/d4.jpg",
     },
   ],
   wine: [
     {
       id: "wine-01",
       num: "01",
-      title: "Dom PÃ©rignon",
-      description: "Champagne, France â€” citrus, brioche, fine mousse.",
+      title: "Vesper In Disguise",
+      description: "Gin, vodka, Cap Corse aperitif, lacto-fermented pearl onions, rooftop nasturtium.",
       image:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
+        "/w1.jpg",
     },
     {
       id: "wine-02",
       num: "02",
-      title: "Burgundy Pinot Noir",
-      description: "CÃ´te de Nuits â€” red cherry, earth, silky tannins.",
+      title: "Dom Pérignon Vintage 2012",
+      description: "Luxury champagne gifted by The French Laundry to celebrate Providence’s Michelin stars.",
       image:
-        "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85",
+        "/w2.jpg",
     },
     {
       id: "wine-03",
       num: "03",
-      title: "Napa Cabernet",
-      description: "Oakville â€” cassis, cedar, structured finish.",
+      title: "Japanese Penicillin",
+      description: "Cocktail featuring Hibiki Harmony whisky, lemon, ginger, maras tunuki float, and Providence honey, crafted in Providence’s refined signature cocktail style.",
       image:
-        "https://images.unsplash.com/photo-1506377247377-894ca44695c3?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
+        "/w3.jpg",
     },
     {
       id: "wine-04",
       num: "04",
-      title: "Sancerre Blanc",
-      description: "Loire Valley â€” gooseberry, mineral, crisp acidity.",
+      title: "Electric Margarita",
+      description: "Cocktail featuring Casa Dragones tequila, Grand Marnier Cuvée du Centenaire, passionfruit cordial, agave, and verjus, crafted in Providence’s elevated signature cocktail style.",
       image:
-        "https://images.unsplash.com/photo-1553361373-0896056f270a?auto=format&fit=crop&w=1200&q=85",
-      fallback:
-        "https://images.unsplash.com/photo-1506377247377-894ca44695c3?auto=format&fit=crop&w=1200&q=85",
+        "/w4.jpg",
     },
   ],
 };
