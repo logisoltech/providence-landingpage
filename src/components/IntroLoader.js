@@ -5,7 +5,7 @@ import { useCallback, useLayoutEffect, useRef, useState } from "react";
 
 /** Remote only — Mixkit CDN (professional chef in restaurant kitchen). */
 const INTRO_VIDEO_SRC =
-  "https://assets.mixkit.co/videos/39535/39535-720.mp4";
+  "/banner18.mp4";
 
 const LOGO_PHASE_MS = 2000;
 const MAIN_END_MS = 4000;
