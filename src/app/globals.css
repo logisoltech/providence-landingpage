@@ -887,6 +887,12 @@ textarea {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .hero-content {
+    padding-left: clamp(-1rem, 4vw, 3rem);
+  }
+}
+
 .hero-social {
   display: none;
 }
@@ -1118,7 +1124,7 @@ textarea {
     display: block;
     position: relative;
     align-self: center;
-    margin-right: 0;
+    margin-right: 21px;
     width: min(220px, 22vw);
     max-width: calc(100% - 0.5rem);
     border-radius: 10px;
@@ -1329,7 +1335,7 @@ textarea {
     );
     right: auto;
     max-width: 2.75rem;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(clamp(1.29rem, 2vw, 2.1875rem));
     z-index: 3;
     padding: 0;
   }
