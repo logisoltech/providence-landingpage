@@ -28,7 +28,7 @@ const HERO_SLIDE_1_SRC = "/heroimg1.png";
 
 /** Slide 2: remote — luxury restaurant interior (Unsplash). */
 const HERO_SLIDE_2_SRC =
-  "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2400&q=85";
+  "/bannernew.png";
 
 /** Slide 3: remote — fine-dining kitchen / chef prep (Mixkit CDN). */
 const HERO_SLIDE_3_VIDEO_SRC =
