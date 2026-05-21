@@ -300,7 +300,7 @@ export default function Footer() {
         <div className="site-footer-divider site-footer-divider--subtle" aria-hidden="true" />
 
         <div className="site-footer-legal">
-          <p className="site-footer-copy">© 2025 Providence. All rights reserved.</p>
+          <p className="site-footer-copy">© 2026 Providence. All rights reserved.</p>
           <ul className="site-footer-legal-list">
             {LEGAL_LINKS.map((item, i) => (
               <li key={item.href}>
